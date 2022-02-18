@@ -98,6 +98,7 @@ ul li a:hover{
     font-size: 13px;
     border-bottom-right-radius: 5px;
     border-bottom-right-radius: 5px;
+    cursor: pointer;
 }
 
 .btn:focus{
