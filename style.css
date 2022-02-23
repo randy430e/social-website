@@ -3,14 +3,24 @@
     padding: 0;
 }
 
-main{
+/*-----Welcome-----*/
+.main{
+    background-color: lightseagreen;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+/*-----Home-----*/
+.main2{
     width: 100%;
     background-position: center;
     background-size: cover;
     height: 109vh;
 }
 
-/*-----navbar-----*/
+/*---navbar---*/
 .navbar{
     width: auto;
     height: 55px;
@@ -111,7 +121,7 @@ ul li a:hover{
     outline: none;
 }
 
-/*-----sidebar-----*/
+/*---sidebar---*/
 .sidebar{
     width: 20vh;
     height: 97vh;
