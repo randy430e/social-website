@@ -10,12 +10,14 @@ main{
     height: 109vh;
 }
 
+/*-----navbar-----*/
 .navbar{
     width: auto;
     height: 55px;
     margin: auto;
     background-color: lightseagreen;
     position: sticky;
+    top: 0;
     z-index: 999;
 }
 
@@ -107,4 +109,12 @@ ul li a:hover{
 
 .srch:focus{
     outline: none;
+}
+
+/*-----sidebar-----*/
+.sidebar{
+    width: 20vh;
+    height: 97vh;
+    margin: left;
+    background-color: lightgrey;
 }
