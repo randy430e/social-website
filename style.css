@@ -182,6 +182,23 @@
     display: none;
 }
 
+.login_form #userCheck,
+.login_form #passCheck{
+    margin-top: 2px;
+    width: 345px;
+    text-align: left;
+    padding: 5px 8px;
+}
+
+.login_form #passCheck2{
+    margin-top: 2px;
+    width: 345px;
+    text-align: left;
+    padding: 5px 8px;
+    color: #C62828;
+    display: none;
+}
+
 /*-----Home-----*/
 .main2{
     width: 100%;

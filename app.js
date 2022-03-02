@@ -5,6 +5,10 @@ var signupForm = document.getElementById("signup_container");
 var username = document.forms['loginform']['username'];
 var password = document.forms['loginform']['password'];
 
+var userCreate = document.forms['signupform']['userCreate'];
+var passCreate = document.forms['signupform']['passCreate'];
+var passConfirm = document.forms['signupform']['passConfirm'];
+
 var userError = document.getElementById("user_error");
 var passError = document.getElementById("pass_error");
 
