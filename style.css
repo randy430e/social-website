@@ -91,7 +91,7 @@
     width: 100%;
 }
 
-/*-forms-*/
+/*-login-form-*/
 .container{
     position: relative;
     margin-top: 100px;
@@ -109,6 +109,7 @@
     padding: 20px 130px;
     font-size: 35px;
     font-weight: bold;
+    text-align: center;
 }
 
 .login_form{
@@ -151,6 +152,19 @@
 
 .login_form button:hover{
     background: rgb(24, 141, 135);
+}
+
+/*-sign-up-form*/
+.container2{
+    position: relative;
+    margin-top: 100px;
+    width: 450px;
+    height: auto;
+    background: #dedede;
+    border-radius: 5px;
+    font-family: sans-serif;
+    margin: 0 auto;
+    top: 20%;
 }
 
 /*-----Home-----*/
