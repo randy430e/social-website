@@ -311,7 +311,9 @@ ul li a:hover{
 /*-sidebar-*/
 .sidebar{
     width: 20vh;
-    height: 97vh;
+    height: 100%;
     margin: left;
     background-color: lightgrey;
+    position: fixed;
+    top: 0;
 }
