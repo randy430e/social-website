@@ -17,7 +17,7 @@
             </div>
             <div id="login_container" class="container">
                 <h1 class="label">User Login</h1>
-                <form class="login_form" action="home.html" method="post" name="loginform" onsubmit="return validated()">
+                <form class="login_form" action="home.html" method="post" name="loginform" onsubmit="return validateLogin()">
                     <div class="font">Username</div>
                     <input type="text" name="username">
                     <div id="user_error">Please enter a valid Username</div>
@@ -29,13 +29,13 @@
             </div>
             <div id="signup_container" class="container2">
                 <h1 class="label">Sign Up</h1>
-                <form class="login_form" action="home.html" method="post" name="signupform">
+                <form class="login_form" action="home.html" method="post" name="signupform" onsubmit="return validateSignup()">
                     <div class="font">Username</div>
                     <input type="text" name="userCreate" required>
-                    <div id="userCheck">Username must be at least 5 characters</div>
+                    <div id="userCheck">Username must have at least 5 characters</div>
                     <div class="font2">Password</div>
                     <input type="password" name="passCreate" required>
-                    <div id="passCheck">Password must be at least 6 characters</div>
+                    <div id="passCheck">Password must have at least 6 characters</div>
                     <div class="font2">Confirm Password</div>
                     <input type="password" name="passConfirm" required>
                     <div id="passCheck2">Passwords do not match. Try again.</div>

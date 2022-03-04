@@ -183,20 +183,13 @@
 }
 
 .login_form #userCheck,
-.login_form #passCheck{
-    margin-top: 2px;
-    width: 345px;
-    text-align: left;
-    padding: 5px 8px;
-}
-
+.login_form #passCheck,
 .login_form #passCheck2{
     margin-top: 2px;
     width: 345px;
     text-align: left;
     padding: 5px 8px;
     color: #C62828;
-    display: none;
 }
 
 /*-----Home-----*/
@@ -311,7 +304,9 @@ ul li a:hover{
 /*-sidebar-*/
 .sidebar{
     width: 20vh;
-    height: 97vh;
+    height: 100%;
     margin: left;
     background-color: lightgrey;
+    position: fixed;
+    top: 0;
 }
