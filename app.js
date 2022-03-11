@@ -18,9 +18,9 @@ var passError = document.getElementById("pass_error");
 username.addEventListener('input', userVerify);
 password.addEventListener('input', passVerify);
 
-userCreate.addEventListener('input', userChecker);
-passCreate.addEventListener('input', passChecker);
-passConfirm.addEventListener('keyup', passChecker2);
+userCreateIn.addEventListener('keyup', userChecker);
+passCreateIn.addEventListener('keyup', passChecker);
+passConfirmIn.addEventListener('keyup', passChecker2);
 
 // Hides login and sign-up forms 
 function showLogin(){
@@ -98,12 +98,20 @@ function userChecker(){
         userCreate.style.color = "green";
         return true;
     }
+    else{
+        userCreate.style.color = "#C62828";
+        return false;
+    }
 }
 
 function passChecker(){
     if (passCreateIn.value.length >= 6) {
         passCreate.style.color = "green";
         return true;
+    }
+    else{
+        passCreate.style.color = "#C62828";
+        return false;
     }
 }
 
