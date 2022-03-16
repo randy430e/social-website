@@ -306,7 +306,10 @@ ul li a:hover{
     width: 20vh;
     height: 100%;
     margin: left;
+    margin-top: 55px;
     background-color: lightgrey;
     position: fixed;
     top: 0;
+    overflow-x: hidden;
+    overflow-y: scroll;
 }

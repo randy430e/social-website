@@ -17,7 +17,7 @@
             </div>
             <div id="login_container" class="container">
                 <h1 class="label">User Login</h1>
-                <form class="login_form" action="home.html" method="post" name="loginform" onsubmit="return validateLogin()">
+                <form class="login_form" action="home.html" method="get" name="loginform" onsubmit="return validateLogin()">
                     <div class="font">Username</div>
                     <input type="text" name="username">
                     <div id="user_error">Please enter a valid Username</div>
@@ -29,7 +29,7 @@
             </div>
             <div id="signup_container" class="container2">
                 <h1 class="label">Sign Up</h1>
-                <form class="login_form" action="home.html" method="post" name="signupform" onsubmit="return validateSignup()">
+                <form class="login_form" action="home.html" autocomplete="off" method="get" name="signupform" onsubmit="return validateSignup()">
                     <div class="font">Username</div>
                     <input type="text" name="userCreate" required>
                     <div id="userCheck">Username must have at least 5 characters</div>
