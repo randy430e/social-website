@@ -313,3 +313,15 @@ ul li a:hover{
     overflow-x: hidden;
     overflow-y: scroll;
 }
+
+.post-create{
+    position: absolute;
+    top: 50%;
+    left: 53%;
+    transform: translate(-50%, -50%);
+}
+
+.post-detail #postTextIn{
+    height: 100px;
+    width: 700px;
+}
