@@ -15,8 +15,6 @@ var passConfirm = document.getElementById("passCheck2");
 var userError = document.getElementById("user_error");
 var passError = document.getElementById("pass_error");
 
-var pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
-
 username.addEventListener('input', userVerify);
 password.addEventListener('input', passVerify);
 

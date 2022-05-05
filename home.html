@@ -12,7 +12,7 @@
         <div class="main2">
             <div class="navbar">
                 <div class="icon">
-                    <h2 class="logo">Schoolbox</h2>
+                    <h2 class="logo">Social</h2>
                 </div>
 
                 <div class="menu">
@@ -30,25 +30,31 @@
                     <a href="#"> <button class="btn"><i class="fa fa-search"></i></button></a>
                 </div>
             </div>
-            <div class="sidebar">
-                <p>Hi</p>
-            </div>
-            <div class="post-create">                
-                <form method="post" enctype="multipart/form-data" >
-                    <div class="post-box-area">
-                        <span class="placeholder">What's going on?</span>
-                        <div class="edit-input" contenteditable="true"></div>
+            <div class="container">
+                <!-- - - - - - - - left sidebar - - - - - -  -->
+                <div class="left-sidebar">
+                    <p>Hi</p>
+                </div>
+                <!-- - - - - - - - main content - - - - - -  -->
+                <div class="main-content">
+                    <div class="post-create">                
+                        <form method="post" enctype="multipart/form-data" >
+                            <div class="post-detail">
+                                <textarea id="postTextIn" cols="100%" rows="3" placeholder="What's going on?"></textarea>
+                            </div>
+                            <div class="post-icons">
+                                <i class="fa fa-image"></i>
+                            </div>
+                            <button class="post-btn" type="submit">Post</button>
+                        </form>
                     </div>
-                    <div class="post-icons">
-                        <li><i class="fa fa-image"></i></li>
-                    </div>
-                    <div class="lim-btn">
-                        <span class="counter-limit">300</span>
-                        <button class="post-btn" type="submit">Post</button>
-                    </div> 
-                </form>
+                </div>
+                <!-- - - - - - - - right sidebar - - - - - -  -->
+                <div class="right-sidebar">
+
+                </div>
             </div>
+            
         </div>
-        <script src="post.js"></script>
     </body>
 </html>
