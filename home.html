@@ -12,7 +12,7 @@
         <div class="main2">
             <div class="navbar">
                 <div class="icon">
-                    <h2 class="logo">Social</h2>
+                    <h2 class="logo">Schoolbox</h2>
                 </div>
 
                 <div class="menu">
@@ -33,28 +33,32 @@
             <div class="container">
                 <!-- - - - - - - - left sidebar - - - - - -  -->
                 <div class="left-sidebar">
-                    <p>Hi</p>
+                    <p>Left</p>
+                </div>
+                <!-- - - - - - - - right sidebar - - - - - -  -->
+                <div class="right-sidebar">
+                    <p>Right</p>
                 </div>
                 <!-- - - - - - - - main content - - - - - -  -->
                 <div class="main-content">
                     <div class="post-create">                
                         <form method="post" enctype="multipart/form-data" >
-                            <div class="post-detail">
-                                <textarea id="postTextIn" cols="100%" rows="3" placeholder="What's going on?"></textarea>
+                            <div class="post-box-area">
+                                <span class="placeholder">What's going on?</span>
+                                <div class="edit-input" contenteditable="true"></div>
                             </div>
                             <div class="post-icons">
                                 <i class="fa fa-image"></i>
                             </div>
-                            <button class="post-btn" type="submit">Post</button>
+                            <div class="lim-btn">
+                                <span class="counter-limit">300</span>
+                                <button class="post-btn" type="submit">Post</button>
+                            </div>
                         </form>
                     </div>
                 </div>
-                <!-- - - - - - - - right sidebar - - - - - -  -->
-                <div class="right-sidebar">
-
-                </div>
             </div>
-            
         </div>
+        <script src="post.js"></script>
     </body>
 </html>
