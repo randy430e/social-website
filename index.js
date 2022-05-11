@@ -17,6 +17,7 @@ const firebaseConfig = {
   initializeApp(firebaseConfig)
 
   // init services
+  const db = getFirestore()
   const auth = getAuth()
 
 
@@ -24,14 +25,14 @@ const firebaseConfig = {
 
   // signing users up
   const signupForm = document.querySelector(".signup")
-  signupForm.addEventListener('submit', (e) => 0) {
+  signupForm.addEventListener('submit', (e) => {
       e.preventDefault()
 
       const email = signup_container.email.value
       const displayName = signup_container.username.value
       const password = signup_container.password.value
 
-      createUserWithEmailAndPassword(auth, email, displayName, password {
+      createUserWithEmailAndPassword(auth, email, displayName, password)
         .then((cred) => {
             console.log('user created: ', cred.user)
             signupForm.reset()
@@ -60,4 +61,4 @@ const firebaseConfig = {
     const email = loginForm.email
     signInWithEmailAndPassword
   })
-}
+
