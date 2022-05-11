@@ -5,9 +5,11 @@ var signupForm = document.getElementById("signup_container");
 var username = document.forms['loginform']['username'];
 var password = document.forms['loginform']['password'];
 
+var emailIn = document.forms['signupform']['enterEmail'];
 var userCreateIn = document.forms['signupform']['userCreate'];
 var passCreateIn = document.forms['signupform']['passCreate'];
 var passConfirmIn = document.forms['signupform']['passConfirm'];
+var enterEmail = document.getElementById("emailCheck");
 var userCreate = document.getElementById("userCheck");
 var passCreate = document.getElementById("passCheck");
 var passConfirm = document.getElementById("passCheck2");
@@ -15,9 +17,12 @@ var passConfirm = document.getElementById("passCheck2");
 var userError = document.getElementById("user_error");
 var passError = document.getElementById("pass_error");
 
+var pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+
 username.addEventListener('input', userVerify);
 password.addEventListener('input', passVerify);
 
+emailIn.addEventListener('keyup', emailChecker);
 userCreateIn.addEventListener('keyup', userChecker);
 passCreateIn.addEventListener('keyup', passChecker);
 passConfirmIn.addEventListener('keyup', passChecker2);
@@ -51,7 +56,7 @@ function validateLogin(){
         username.focus();
         return false;
     }
-    if (password.value.length < 6) {
+    if (password.value.length < 6 || username.value.match(pattern)) {
         password.style.border = "1px solid red";
         passError.style.display = "block";
         password.focus();
@@ -76,6 +81,11 @@ function passVerify(){
 }
 
 function validateSignup(){
+    if (!emailIn.value.match(pattern)) {
+        emailIn.style.border = "1px solid red";
+        emailIn.focus();
+        return false;
+    }
     if (userCreateIn.value.length < 5) {
         userCreateIn.style.border = "1px solid red";
         userCreateIn.focus();
@@ -89,6 +99,17 @@ function validateSignup(){
     if (passConfirmIn.value != passCreateIn.value) {
         passConfirmIn.style.border = "1px solid red";
         passConfirmIn.focus();
+        return false;
+    }
+}
+
+function emailChecker(){
+    if (emailIn.value.match(pattern)) {
+        enterEmail.style.color = "green"
+        return true;
+    }
+    else{
+        enterEmail.style.color = "#C62828";
         return false;
     }
 }
