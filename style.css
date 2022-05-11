@@ -178,10 +178,11 @@
     border-radius: 5px;
     font-family: sans-serif;
     margin: 0 auto;
-    top: 20%;
+    top: 17%;
     display: none;
 }
 
+.login_form #emailCheck,
 .login_form #userCheck,
 .login_form #passCheck,
 .login_form #passCheck2{
@@ -318,7 +319,7 @@ ul li a:hover{
 .right-sidebar{
     background: #cbdffa;
     flex-basis: 25%;
-    position: fixed;
+    position: sticky;
     top: 70px;
     align-self: flex-start;
     width: 70px;
@@ -361,7 +362,7 @@ ul li a:hover{
 .edit-input{
     outline: none;
     font-size: 100%;
-    height: 20vh; 
+    height: 18vh; 
 }
 
 .post-icons{
