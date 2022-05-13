@@ -42,6 +42,8 @@ function showSignup(){
     }
 }
 
+//Checks if value in confirm password is
+//the same as value in password
 function passChecker2(){
     if (passConfirmIn.value == passCreateIn.value) {
         passConfirm.style.display = "none";
