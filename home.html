@@ -32,23 +32,39 @@
             </div>
 
             <div class="main-container">
+                
                 <!-- - - - - - - - left sidebar - - - - - -  -->
                 <div class="left-sidebar">
+
                     <!--Links for the left sidebar-->
                     <imp-links class="div">
                         <a href='#'>Left</a>
                     </imp-links>
+
                 </div>
                 
                 <!-- - - - - - - - main content - - - - - -  -->
                 <div class="main-content">
+
                      <!-- creates the container for the create post - - - - - -  -->
-                    <div class="post-create">                
+                    <div class="post-create">
+
+                        <!-- creates the profile image for the create post - - - - -->
+                        <user-profile class="div">
+                            <img src="./images/Camille_OriginalSkin copy.jpg">
+                            <div>
+                                <p>Test Name</p>
+                                <small>Public</small>
+                            </div>
+                        </user-profile>   
+
+                        <!-- creates the text area for the create post - - - - -->
                         <form method="post" enctype="multipart/form-data" >
                             <div class="post-box-area">
                                 <span class="placeholder">What's going on?</span>
                                 <div class="edit-input" contenteditable="true"></div>
                             </div>
+                            
                             <div class="post-icons">
                                 <i class="fa fa-image"></i>
                             </div>
@@ -57,7 +73,9 @@
                                 <button class="post-btn" type="submit">Post</button>
                             </div>
                         </form>
+
                     </div>
+
                 </div>
                 
                 <!-- - - - - - - - right sidebar - - - - - -  -->
