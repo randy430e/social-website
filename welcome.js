@@ -5,9 +5,11 @@ var signupForm = document.getElementById("signup_container");
 var username = document.forms['loginform']['username'];
 var password = document.forms['loginform']['password'];
 
+var emailIn = document.forms['signupform']['enterEmail'];
 var userCreateIn = document.forms['signupform']['userCreate'];
 var passCreateIn = document.forms['signupform']['passCreate'];
 var passConfirmIn = document.forms['signupform']['passConfirm'];
+var enterEmail = document.getElementById("emailCheck");
 var userCreate = document.getElementById("userCheck");
 var passCreate = document.getElementById("passCheck");
 var passConfirm = document.getElementById("passCheck2");
@@ -15,11 +17,8 @@ var passConfirm = document.getElementById("passCheck2");
 var userError = document.getElementById("user_error");
 var passError = document.getElementById("pass_error");
 
-username.addEventListener('input', userVerify);
-password.addEventListener('input', passVerify);
+var pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
 
-userCreateIn.addEventListener('keyup', userChecker);
-passCreateIn.addEventListener('keyup', passChecker);
 passConfirmIn.addEventListener('keyup', passChecker2);
 
 // Hides login and sign-up forms 
@@ -115,6 +114,8 @@ function passChecker(){
     }
 }
 
+//Checks if value in confirm password is
+//the same as value in password
 function passChecker2(){
     if (passConfirmIn.value == passCreateIn.value) {
         passConfirm.style.display = "none";

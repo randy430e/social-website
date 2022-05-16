@@ -17,27 +17,30 @@
             </div>
             <div id="login_container" class="container">
                 <h1 class="label">User Login</h1>
-                <form class="login_form" action="home.html" method="get" name="loginform" onsubmit="return validateLogin()">
-                    <div class="font">Username</div>
-                    <input type="text" name="username">
-                    <div id="user_error">Please enter a valid Username</div>
+                <form class="login_form" action="home.html" method="get" name="loginform" onsubmit="">
+                    <div class="font">Email or Username</div>
+                    <input type="text" name="username" minlength="5" required>
+                    <div id="user_error">Please enter a valid Email or Username</div>
                     <div class="font2">Password</div>
-                    <input type="password" name="password">
+                    <input type="password" name="password" minlength="6" required>
                     <div id="pass_error">Wrong Password. Please try again.</div>
                     <button type="submit">Login</button>
                 </form>
             </div>
             <div id="signup_container" class="container2">
                 <h1 class="label">Sign Up</h1>
-                <form class="login_form" action="home.html" autocomplete="off" method="get" name="signupform" onsubmit="return validateSignup()">
-                    <div class="font">Username</div>
-                    <input type="text" name="userCreate" required>
+                <form class="login_form" action="home.html" autocomplete="off" method="get" name="signupform" onsubmit="">
+                    <div class="font">Email</div>
+                    <input type="email" name="enterEmail" required>
+                    <div id="emailCheck">Please enter a valid email</div>
+                    <div class="font2">Username</div>
+                    <input type="text" name="userCreate" minlength="5" required>
                     <div id="userCheck">Username must have at least 5 characters</div>
                     <div class="font2">Password</div>
-                    <input type="password" name="passCreate" required>
+                    <input type="password" name="passCreate" minlength="6" required>
                     <div id="passCheck">Password must have at least 6 characters</div>
                     <div class="font2">Confirm Password</div>
-                    <input type="password" name="passConfirm" required>
+                    <input type="password" name="passConfirm" minlength="6" required>
                     <div id="passCheck2">Passwords do not match. Try again.</div>
                     <div class="font2">Grade Level</div>
                     <input type="number" name=""  min="9" max="12" required>

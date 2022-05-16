@@ -23,7 +23,8 @@ const firebaseConfig = {
 
 
 
-  // signing users up
+  /* signing users up / idk how HTML classes work, set the querySelecter (L28)
+  to the HTML class name for login */
   const signupForm = document.querySelector(".signup")
   signupForm.addEventListener('submit', (e) => {
       e.preventDefault()
@@ -43,7 +44,7 @@ const firebaseConfig = {
   })
 
 
-  // logging users in & out
+  // log out function
   const logoutButton = document.querySelector('.logout')
   logoutButton.addEventListener('click', () => {
     signOut(auth)
@@ -54,11 +55,19 @@ const firebaseConfig = {
             console.log(err.message)
         }) 
   })
-
+  /* log in function / idk how HTML classes work, set the querySelecter (L60)
+  to the HTML class name for login */
   const loginForm = document.querySelector('.login')
   loginForm.addEventListener('submit', (e) => {
     e.preventDefault()
-    const email = loginForm.email
-    signInWithEmailAndPassword
+    const email = loginForm.email.value
+    const password = loginForm.password.value
+    signInWithEmailAndPassword(auth, email, password)
+        .then((cred) => {
+            console.log('user logged in', cred.user)
+        })
+        .catch((err) => {
+            console.log(err.message)
+        })
   })
 

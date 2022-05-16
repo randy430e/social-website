@@ -27,8 +27,11 @@ input.addEventListener('keyup',function(){
     }
 })
 
+//Post button prevents user from sending a post
+//When the limit counter is less than or equal to zero
 postBtn.addEventListener('click',function(e){
     e.preventDefault();
+    //Updates limit counter variable
     let counterVal = counterLimit.innerHTML;
     if(counterVal > 0){
         return true;
