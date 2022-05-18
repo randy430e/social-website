@@ -1,0 +1,16 @@
+<!-- - - - - - - - post display - - - - - -  -->
+                    <div class="post-output">
+                        <div class="postWrapper">
+                            <div class="postTop">
+                                <div class="postTLeft">
+                                    <span class="postUser">Bingus</span>
+                                    <span class="postDate">10 mins ago</span>
+                                </div>
+                            </div>
+                            <div class="postCenter">
+                                <span class="postText">My first post!</span>
+                            </div>
+                            <div class="postBottom">
+                            </div>
+                        </div>
+                    </div>
