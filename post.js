@@ -39,3 +39,25 @@ postBtn.addEventListener('click',function(e){
         return false;
     }
 })
+
+
+
+//         Code for creating a post 
+class NewPost {
+    constructor(){
+        const para = home.createElement("p");
+        const node = home.createTextNode("This is new.");
+        para.appendChild(node);
+
+        const element = home.getElementById("div1");
+        element.appendChild(para);
+    }
+
+    constructor(content){
+        this.content = content;
+    }
+
+    getContent() {
+        return this.content;
+    }
+}

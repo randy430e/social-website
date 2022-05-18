@@ -408,8 +408,8 @@ redundant code, I think?
 .edit-input{
     outline: none;
     font-size: 100%;
-<<<<<<< HEAD
     align-items: center;
+    height: 18vh; 
 }
 
 .post-icons{
