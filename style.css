@@ -92,7 +92,7 @@
 }
 
 /*- - - - - - - - - - login-form- - - - - - - - */
-.container{
+.logcontainer{
     position: relative;
     margin-top: 100px;
     width: 450px;
@@ -317,8 +317,8 @@ ul li a:hover{
 .left-sidebar{
     background: #cbdffa;
     flex-basis: 25%;
-    position: sticky;
-    top: 70px;
+    position: relative;
+    top: -13px;
     align-self: flex-start;
 }
 
@@ -326,8 +326,8 @@ ul li a:hover{
 .right-sidebar{
     background: #cbdffa;
     flex-basis: 25%;
-    position: sticky;
-    top: 70px;
+    position: relative;
+    top: -13px;
     align-self: flex-start;
     width: 70px;
 }
@@ -341,8 +341,8 @@ ul li a:hover{
     position: absolute;
     top: 50%;
     left: 53%;
-    transform: translate(-50%, -120%);
-    width: 100%;
+    transform: translate(-50%, -250%);
+    width: 30%;
     background: #fff;
     border-radius: 6px;
     padding: 20px;
@@ -423,7 +423,8 @@ ul li a:hover{
 /*- - - - - - - post display - - - - - -*/
 .post-output{
     position: absolute;
-    width: 700px;
+    width: 40%;
+    height: auto;
     border-radius: 6px;
     background: #fff;
     transform: translate(-50%, 400%);

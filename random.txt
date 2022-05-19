@@ -3,7 +3,7 @@
                         <div class="postWrapper">
                             <div class="postTop">
                                 <div class="postTLeft">
-                                    <span class="postUser">Bingus</span>
+                                    <span class="postUser">Test User</span>
                                     <span class="postDate">10 mins ago</span>
                                 </div>
                             </div>
